@@ -14,6 +14,10 @@
   select, input, textarea, button { width: 100%; padding: 12px; margin-top: 5px; border-radius: 6px; border: 1px solid #ccc; font-size: 15px; font-family: inherit; }
   textarea { resize: vertical; min-height: 100px; }
   
+  .instruction-box { background: #eef6fc; border-left: 5px solid #3498db; padding: 12px 15px; margin-bottom: 15px; border-radius: 6px; font-size: 14px; color: #2c3e50; }
+  .instruction-box h4 { margin: 0 0 8px 0; color: #2980b9; }
+  .instruction-box p { margin: 0 0 5px 0; }
+
   .wa-btn { background: #25D366; color: white; border: none; font-size: 16px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 15px; border-radius: 6px; text-decoration: none; padding: 12px; }
   .wa-btn:hover { background: #1da851; }
   
@@ -38,8 +42,16 @@
 
 <div class="box">
   <h2>📖 കുട്ടികളുടെ വായനാ വേദി</h2>
+
+  <!-- നിർദ്ദേശ ബോക്സ് (കുട്ടികൾക്ക് മാത്രം) -->
+  <div class="instruction-box">
+    <h4><i class="fa-solid fa-circle-info"></i> ശ്രദ്ധിക്കുക:</h4>
+    <p>👉 ഈ പരിശോധന <b>കുട്ടികൾ തന്നെ നേരിട്ട് ചെയ്യേണ്ടതാണ്</b> (മുതിർന്നവർ ചെയ്യരുത്).</p>
+    <p>1️⃣ വാട്സ്ആപ്പ് ബട്ടൺ വഴി താഴെയുള്ള നമ്പറിലേക്ക് കുട്ടി വായിച്ച വോയിസ് അയക്കുക.</p>
+    <p>2️⃣ തിരികെ ലഭിക്കുന്ന ടെക്സ്റ്റ് കോപ്പി ചെയ്ത് താഴെയുള്ള ബോക്സിൽ പേസ്റ്റ് ചെയ്യുക.</p>
+  </div>
   
-  <!-- 1. വിദ്യാർത്ഥിയുടെ വിവരങ്ങൾ -->
+  <!-- 1. വിവരങ്ങൾ തിരഞ്ഞെടുക്കൽ -->
   <label>🏫 മദ്രസ തിരഞ്ഞെടുക്കുക:</label>
   <select id="madrasaSelect" onchange="onMadrasaChange()">
     <option value="">-- മദ്രസ തിരഞ്ഞെടുക്കുക --</option>
@@ -72,10 +84,10 @@
 
   <!-- 2. വാട്സ്ആപ്പ് ലിങ്ക് -->
   <a href="https://wa.me/918848939767" target="_blank" class="wa-btn">
-    <i class="fa-brands fa-whatsapp" style="font-size: 22px;"></i> വാട്സ്ആപ്പിൽ വോയിസ് അയക്കുക
+    <i class="fa-brands fa-whatsapp" style="font-size: 22px;"></i> 8848939767 നമ്പറിലേക്ക് വോയിസ് അയക്കുക
   </a>
 
-  <!-- 3. വാട്സ്ആപ്പിൽ ലഭിച്ച ടെക്സ്റ്റ് പേസ്റ്റ് ചെയ്യാനുള്ള സ്ഥലം -->
+  <!-- 3. ടെക്സ്റ്റ് പേസ്റ്റ് ചെയ്യാനുള്ള സ്ഥലം -->
   <label>📋 വാട്സ്ആപ്പിൽ നിന്നും ലഭിച്ച ടെക്സ്റ്റ് ഇവിടെ പേസ്റ്റ് ചെയ്യുക:</label>
   <textarea id="pastedTextDisplay" placeholder="വാട്സ്ആപ്പിൽ തിരികെ ലഭിച്ച ടെക്സ്റ്റ് കോപ്പി ചെയ്ത് ഇവിടെ പേസ്റ്റ് ചെയ്യുക..."></textarea>
 
@@ -141,26 +153,34 @@ async function fetchMasterData() {
                 mSelect.appendChild(opt);
             });
         }
-    } catch(e) { alert("മദ്രസ ലിസ്റ്റ് ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല."); }
+    } catch(e) { console.error("മദ്രസ ലിസ്റ്റ് ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല:", e); }
 }
 
-// റീഡിങ് പാഠങ്ങൾ എടുക്കുന്നു
+// റീഡിങ് പാഠങ്ങൾ എടുക്കുന്നു (പ്രശ്നം പരിഹരിച്ചത് ഇവിടെയാണ്)
 async function fetchReadingData() {
     try {
         let res = await fetch('data/data_reading.json?t=' + Date.now());
         if(res.ok) {
             let data = await res.json();
-            readingLessons = data.lessons || [];
+            // ഫയലിലെ സ്ട്രക്ചർ അറേ ആണോ അതോ ഒബ്ജക്റ്റ് ആണോ എന്ന് പരിശോധിച്ചെടുക്കുന്നു
+            readingLessons = Array.isArray(data) ? data : (data.lessons || []);
+            
             let lSelect = document.getElementById('lessonSelect');
+            lSelect.innerHTML = '<option value="">-- പാഠം തിരഞ്ഞെടുക്കുക --</option>';
+            
             readingLessons.forEach((l, idx) => {
                 if(!l.hidden) {
                     let opt = document.createElement('option');
-                    opt.value = idx; opt.innerText = l.title;
+                    opt.value = idx; 
+                    opt.innerText = l.title || l.name || (`പാഠം ${idx + 1}`);
                     lSelect.appendChild(opt);
                 }
             });
         }
-    } catch(e) { alert("റീഡിങ് പാഠങ്ങൾ ലഭ്യമല്ല."); }
+    } catch(e) { 
+        console.error("റീഡിങ് പാഠങ്ങൾ ലഭ്യമല്ല:", e);
+        // ഫയൽ കിട്ടിയില്ലെങ്കിലും കോഡ് ബ്രേക്ക് ആവാതിരിക്കാൻ ടെസ്റ്റ് ഡാറ്റ നൽകാം
+    }
 }
 
 function onMadrasaChange() {
@@ -178,8 +198,8 @@ function onMadrasaChange() {
 
 function onLessonChange() {
     let idx = document.getElementById('lessonSelect').value;
-    if(idx !== "") {
-        currentTargetText = readingLessons[idx].text;
+    if(idx !== "" && readingLessons[idx]) {
+        currentTargetText = readingLessons[idx].text || readingLessons[idx].content || "";
     } else {
         currentTargetText = "";
     }
@@ -194,8 +214,9 @@ function calculateResult() {
 
     if(!student) return alert("ദയവായി കുട്ടിയുടെ പേര് സെലക്ട് ചെയ്യുക!");
     if(!studentClass) return alert("ദയവായി ക്ലാസ് സെലക്ട് ചെയ്യുക!");
-    if(lessonIdx === "") return alert("ദയവായി പാഠം സെലക്ട് ചെയ്യുക!");
+    if(lessonIdx === "") return alert("ദയവായി വായിക്കേണ്ട പാഠം സെലക്ട് ചെയ്യുക!");
     if(!pastedText.trim()) return alert("ദയവായി വാട്സ്ആപ്പിൽ ലഭിച്ച ടെക്സ്റ്റ് ബോക്സിൽ പേസ്റ്റ് ചെയ്യുക!");
+    if(!currentTargetText) return alert("തിരഞ്ഞെടുത്ത പാഠത്തിന്റെ മാതൃകാ ടെക്സ്റ്റ് ലഭ്യമല്ല!");
 
     let targetWords = cleanText(currentTargetText).split(/\s+/);
     let spokenWords = cleanText(pastedText).split(/\s+/);
@@ -243,7 +264,8 @@ function openCertificate() {
     let student = document.getElementById('studentSelect').value;
     let madrasa = document.getElementById('madrasaSelect').value;
     let studentClass = document.getElementById('classSelect').value;
-    let lessonName = readingLessons[document.getElementById('lessonSelect').value].title;
+    let lessonIndex = document.getElementById('lessonSelect').value;
+    let lessonName = readingLessons[lessonIndex] ? (readingLessons[lessonIndex].title || readingLessons[lessonIndex].name) : "പാഠം";
     let score = document.getElementById('accuracyVal').innerText;
 
     document.getElementById('certStudentName').innerText = student;
