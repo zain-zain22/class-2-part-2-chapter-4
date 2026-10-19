@@ -1,5 +1,5 @@
 {
-  "version": 1792418006637,
+  "version": 1792435525457,
   "words": [
     {
       "mal": "വിശുദ്ധ",
@@ -311,35 +311,28 @@
     },
     {
       "mal": "ചെന്നു",
-      "arbiText": "ച٘نُّ",
+      "arbiText": "چ٘نُّ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "എൻറെ",
-      "arbiText": "ا٘نَْر٘",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "ഒട്ടകങ്ങൾ",
-      "arbiText": "اٗڊَّكَۼَّۻَۡ",
+      "arbiText": "ا٘نْر٘",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തിരിച്ചു",
-      "arbiText": "تِڔِചُّ",
+      "arbiText": "تِڔِچُ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തരണം",
-      "arbiText": "تَڔَڹمٛ",
+      "arbiText": "تَڔَڹَمٛ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -353,7 +346,7 @@
     },
     {
       "mal": "നിങ്ങൾക്ക്",
-      "arbiText": "نِۼَّۻَۡكّۡ",
+      "arbiText": "نِۼَّۻۡكّۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -367,7 +360,7 @@
     },
     {
       "mal": "ഞാൻ",
-      "arbiText": "ڿَانَْ",
+      "arbiText": "ڿَانْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -381,7 +374,7 @@
     },
     {
       "mal": "എന്റേതാണ്",
-      "arbiText": "ا٘نْڔي٘تَاڹۡ",
+      "arbiText": "ا٘نْڔ٘يتَاڹۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -402,14 +395,7 @@
     },
     {
       "mal": "അല്ലാഹു",
-      "arbiText": "اَلَّاهُ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "തആലയുടെതാണ്",
-      "arbiText": "تَآلَیُڊ٘تَاڹۡ",
+      "arbiText": "اَللّٰهُ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -423,21 +409,21 @@
     },
     {
       "mal": "അവൻ",
-      "arbiText": "اَوَنَْ",
+      "arbiText": "اَوَنْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "സംരക്ഷിച്ചുകൊള്ളും",
-      "arbiText": "സمٛڔَكْشِചُّكٗۻُّمْ",
+      "arbiText": "سَمٛڔَكْشِچُكٗۻُّمْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തിരിച്ചുകൊടുത്തു",
-      "arbiText": "تِڔِചُّكٗڊُتُّ",
+      "arbiText": "تِڔِچُكٗڊُتُّ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -451,7 +437,7 @@
     },
     {
       "mal": "പരിസരത്തുനിന്ന്",
-      "arbiText": "پَڔِസَڔَتُّنِنّۡ",
+      "arbiText": "پَڔِسَڔَتُّنِنّۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -465,7 +451,7 @@
     },
     {
       "mal": "താമസിക്കാൻ",
-      "arbiText": "تَامَസِكَّانَْ",
+      "arbiText": "تَامَسِكَّانْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -479,49 +465,49 @@
     },
     {
       "mal": "സമീപത്ത്",
-      "arbiText": "സَمِیپَتّۡ",
+      "arbiText": "سَمِیپَتّۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വെച്ച്",
-      "arbiText": "و٘ചّۡ",
+      "arbiText": "و٘چّۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അദ്ദേഹം",
-      "arbiText": "اَدۡدي٘همٛ",
+      "arbiText": "اَدّ٘يهمٛ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പ്രാർത്ഥിച്ചു",
-      "arbiText": "پْرَارَٛتۡتھِചُّ",
+      "arbiText": "پْرَارٛتِھچُ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ചുറ്റും",
-      "arbiText": "ചُڔُّمْ",
+      "arbiText": "چُڔُّمْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കൂടിയവർ",
-      "arbiText": "كُوڊِیَوَرَٛ",
+      "arbiText": "كُوڊِیَوَرٛ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ആമീൻ",
-      "arbiText": "آمِینَْ",
+      "arbiText": "آمِینْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -555,15 +541,8 @@
       "hidden": false
     },
     {
-      "mal": "തആല",
-      "arbiText": "تَآلَ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
       "mal": "കൂട്ടം",
-      "arbiText": "كُوڊّمٛ",
+      "arbiText": "كُوڊَّمٛ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -584,14 +563,14 @@
     },
     {
       "mal": "അയച്ചു",
-      "arbiText": "اَیَചُّ",
+      "arbiText": "اَیَچُّ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ചുട്ടുപഴുത്ത",
-      "arbiText": "ചُڊُّپَژُتَّ",
+      "arbiText": "چُڊُّپَژُتَّ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -618,22 +597,15 @@
       "hidden": false
     },
     {
-      "mal": "സൈന്യത്തിനു",
-      "arbiText": "സَیْنۡیَتِّنُ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
       "mal": "നേരെ",
-      "arbiText": "ني٘ڔ٘",
+      "arbiText": "ن٘يڔ٘",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വർഷിച്ചു",
-      "arbiText": "وَرَٛشِചُّ",
+      "arbiText": "وَرٛشِچُّ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -647,21 +619,21 @@
     },
     {
       "mal": "ശരീരങ്ങൾ",
-      "arbiText": "ۺَڔِیڔَۼَّۻَۡ",
+      "arbiText": "ۺَڔِیڔَۼَّۻۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ചതഞ്ഞരഞ്ഞതുപോലെയായി",
-      "arbiText": "ചَتَڿَّڔَڿَّتُپٗول٘یَایِ",
+      "arbiText": "چَتَڿَّڔَڿَّتُپٗول٘یَایِ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തകർക്കാൻ",
-      "arbiText": "تَكَرَٛكَّانَْ",
+      "arbiText": "تَكَرٛكَّانْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -675,14 +647,14 @@
     },
     {
       "mal": "നശിപ്പിച്ചു",
-      "arbiText": "نَۺِپِّചُّ",
+      "arbiText": "نَۺِپِّچُ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "സംരക്ഷകനാണ്",
-      "arbiText": "സمٛڔَكْشَكَنَاڹۡ",
+      "arbiText": "سَمٛڔَكْشَكَنَاڹۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
