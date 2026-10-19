@@ -1,16 +1,16 @@
 {
-  "version": 1792392233669,
+  "version": 1792418006637,
   "words": [
     {
       "mal": "വിശുദ്ധ",
-      "arbiText": "وِۺُدَّ",
+      "arbiText": "وِۺُدَّه",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കഅ്ബ",
-      "arbiText": "كَا്َബَ",
+      "arbiText": "كَعْبَة",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -24,21 +24,21 @@
     },
     {
       "mal": "ഖിബ്‌ലയാണ്",
-      "arbiText": "كھِബۡ‌لَیَاڹۡ",
+      "arbiText": "قِبْلَیَاڹۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പരിശുദ്ധ",
-      "arbiText": "پَڔِۺُدَّ",
+      "arbiText": "پَڔِۺُدَّه",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "മക്കയിലാണ്",
-      "arbiText": "مَكَّیِلَاڹۡ",
+      "arbiText": "مَكَّة یِلَاڹۡ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -46,13 +46,6 @@
     {
       "mal": "ലോകത്തിന്റെ",
       "arbiText": "لٗوكَتِّنْڔ٘",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "നാനാ",
-      "arbiText": "نَانَا",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -86,15 +79,8 @@
       "hidden": false
     },
     {
-      "mal": "കഅ്ബയുടെ",
-      "arbiText": "كَا്َബَیُڊ٘",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
       "mal": "പ്രശസ്തി",
-      "arbiText": "پْرَۺَസۡتِ",
+      "arbiText": "پْرَۺَسْتِ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -108,7 +94,7 @@
     },
     {
       "mal": "അബ്രഹത്ത്",
-      "arbiText": "اَബۡڔَهَتّۡ",
+      "arbiText": "اَبْرَهَةْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -122,7 +108,7 @@
     },
     {
       "mal": "അസ്വസ്ഥനാക്കി",
-      "arbiText": "اَസْوَسْتَنَاكِّ",
+      "arbiText": "اَسْوَسْتَهنَاكِّ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -143,7 +129,7 @@
     },
     {
       "mal": "തീരുമാനിച്ചു",
-      "arbiText": "تِیڔُمَانِചُّ",
+      "arbiText": "تِیڔُمَانِچُ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -156,15 +142,8 @@
       "hidden": false
     },
     {
-      "mal": "വൻ",
-      "arbiText": "وَنَْ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
       "mal": "സൈന്യവുമായി",
-      "arbiText": "സَیْنۡیَوُمَایِ",
+      "arbiText": "سَیْنۡیَوُمَایِ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -192,28 +171,21 @@
     },
     {
       "mal": "ധാരാളം",
-      "arbiText": "دھَاڔَاۻمٛ",
+      "arbiText": "دَھاڔَاۻَمٛ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ആയുധങ്ങളുമുള്ള",
-      "arbiText": "آیُدھَۼَّۻُمُۻَّ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "സൈന്യമാണ്",
-      "arbiText": "സَیْنۡیَمَاڹۡ",
+      "arbiText": "آیُدَھۼَّۻُمُۻَّ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അവർ",
-      "arbiText": "اَوَرَٛ",
+      "arbiText": "اَوَرٛ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -227,7 +199,7 @@
     },
     {
       "mal": "സമീപമെത്തി",
-      "arbiText": "സَمِیپَم٘تِّ",
+      "arbiText": "سَمِیپَم٘تِّ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -241,7 +213,7 @@
     },
     {
       "mal": "ഭയപ്പെടുത്താൻ",
-      "arbiText": "بھَیَپّ٘ڊُتَّانَْ",
+      "arbiText": "بَھیَپّ٘ڊُتَّانْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -276,7 +248,7 @@
     },
     {
       "mal": "ഒട്ടകം",
-      "arbiText": "اٗڊَّكمٛ",
+      "arbiText": "اٗڊَّكَمٛ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -290,7 +262,7 @@
     },
     {
       "mal": "പിടിച്ചു",
-      "arbiText": "پِڊِചُّ",
+      "arbiText": "پِڊِچُ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -298,20 +270,6 @@
     {
       "mal": "കൊണ്ടുപോയി",
       "arbiText": "كٗڹْڊُپٗویِ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "അബ്ദുൽ",
-      "arbiText": "اَബۡدُلَْ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "മുത്തലിബിന്റെ",
-      "arbiText": "مُتَّلِബِنْڔ٘",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -325,7 +283,7 @@
     },
     {
       "mal": "അക്കൂട്ടത്തിൽ",
-      "arbiText": "اَكُّوڊَّتِّلَْ",
+      "arbiText": "اَكُّوڊَّتِّلْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
@@ -345,22 +303,8 @@
       "hidden": false
     },
     {
-      "mal": "മുത്തലിബ്",
-      "arbiText": "مُتَّلِബۡ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "അബ്രഹത്തിനെ",
-      "arbiText": "اَബۡڔَهَتِّن٘",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
       "mal": "കാണാൻ",
-      "arbiText": "كَاڹَانَْ",
+      "arbiText": "كَاڹَانْ",
       "audio": "",
       "writingPaths": null,
       "hidden": false
