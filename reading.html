@@ -26,7 +26,7 @@
 
   .result-card { display: none; background: #fff3e0; border: 1px solid #ffe0b2; padding: 15px; border-radius: 8px; margin-top: 15px; text-align: center; }
   .score-badge { font-size: 24px; font-weight: bold; color: #d35400; margin: 10px 0; }
-  .cert-btn { background: #27ae60; color: white; border: none; font-weight: bold; cursor: pointer; margin-top: 10px; }
+  .cert-btn { background: #27ae60; color: white; border: none; font-weight: bold; cursor: pointer; margin-top: 10px; display: none; }
 
   /* Certificate Styling */
   #certModal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center; padding: 10px; }
@@ -77,11 +77,6 @@
     <option value="">-- ആദ്യം മദ്രസ തിരഞ്ഞെടുക്കുക --</option>
   </select>
 
-  <label>📚 വായനാ പാഠം തിരഞ്ഞെടുക്കുക:</label>
-  <select id="lessonSelect" onchange="onLessonChange()">
-    <option value="">-- പാഠം തിരഞ്ഞെടുക്കുക --</option>
-  </select>
-
   <!-- 2. വാട്സ്ആപ്പ് ലിങ്ക് -->
   <a href="https://wa.me/918848939767" target="_blank" class="wa-btn">
     <i class="fa-brands fa-whatsapp" style="font-size: 22px;"></i> 8848939767 നമ്പറിലേക്ക് വോയിസ് അയക്കുക
@@ -91,16 +86,15 @@
   <label>📋 വാട്സ്ആപ്പിൽ നിന്നും ലഭിച്ച ടെക്സ്റ്റ് ഇവിടെ പേസ്റ്റ് ചെയ്യുക:</label>
   <textarea id="pastedTextDisplay" placeholder="വാട്സ്ആപ്പിൽ തിരികെ ലഭിച്ച ടെക്സ്റ്റ് കോപ്പി ചെയ്ത് ഇവിടെ പേസ്റ്റ് ചെയ്യുക..."></textarea>
 
-  <button class="submit-btn" onclick="calculateResult()">
-    <i class="fa-solid fa-calculator"></i> ഫലം കണക്കാക്കുക
+  <button class="submit-btn" onclick="checkSubmission()">
+    <i class="fa-solid fa-circle-check"></i> പരിശോധിക്കുക
   </button>
 
   <!-- 4. റിസൾട്ടും പോയിന്റും -->
   <div class="result-card" id="resultCard">
     <h3>📊 നിങ്ങളുടെ ഫലം</h3>
-    <div>കൃത്യത (Accuracy): <b id="accuracyVal">0%</b></div>
-    <div>നേടിയ പോയിന്റ്: <b id="pointsVal">0</b> / 100</div>
-    <div class="score-badge" id="ratingText">-</div>
+    <div>വായനയുടെ ദൈർഘ്യം/വിവരം ലഭിച്ചു!</div>
+    <div class="score-badge" id="ratingText">🌟 അഭിനന്ദനങ്ങൾ!</div>
     <button class="cert-btn" id="certBtn" onclick="openCertificate()">📜 സർട്ടിഫിക്കറ്റ് നേടൂ</button>
   </div>
 </div>
@@ -117,11 +111,10 @@
     
     <div class="cert-details">
       <p><b>മദ്രസ:</b> <span id="certMadrasaName">-</span> | <b>ക്ലാസ്:</b> <span id="certClassName">-</span></p>
-      <p><b>പാഠഭാഗം:</b> <span id="certLessonName">-</span></p>
     </div>
 
     <div style="margin-top: 15px; background: #fdf2fa; padding: 10px; border-radius: 5px;">
-      <b>സ്കോർ: <span id="certScore">0%</span></b> | <b>ഗ്രേഡ്: <span id="certGrade">A+</span></b>
+      <b>സ്റ്റാറ്റസ്: <span id="certStatus">വിജയകരമായി പൂർത്തിയാക്കി</span></b>
     </div>
 
     <button style="background: #3498db; color: white; margin-top: 15px;" onclick="window.print()">🖨️ പ്രിന്റ് / സേവ് ചെയ്യുക</button>
@@ -131,13 +124,10 @@
 
 <script>
 let masterSchoolData = {};
-let readingLessons = [];
-let currentTargetText = "";
 
 // പേജ് ലോഡ് ചെയ്യുമ്പോൾ ഡാറ്റ ഫെച്ച് ചെയ്യുന്നു
 window.addEventListener('DOMContentLoaded', async () => {
     await fetchMasterData();
-    await fetchReadingData();
 });
 
 // മദ്രസ & കുട്ടികളുടെ വിവരങ്ങൾ എടുക്കുന്നു
@@ -156,33 +146,6 @@ async function fetchMasterData() {
     } catch(e) { console.error("മദ്രസ ലിസ്റ്റ് ലോഡ് ചെയ്യാൻ കഴിഞ്ഞില്ല:", e); }
 }
 
-// റീഡിങ് പാഠങ്ങൾ എടുക്കുന്നു (പ്രശ്നം പരിഹരിച്ചത് ഇവിടെയാണ്)
-async function fetchReadingData() {
-    try {
-        let res = await fetch('data/data_reading.json?t=' + Date.now());
-        if(res.ok) {
-            let data = await res.json();
-            // ഫയലിലെ സ്ട്രക്ചർ അറേ ആണോ അതോ ഒബ്ജക്റ്റ് ആണോ എന്ന് പരിശോധിച്ചെടുക്കുന്നു
-            readingLessons = Array.isArray(data) ? data : (data.lessons || []);
-            
-            let lSelect = document.getElementById('lessonSelect');
-            lSelect.innerHTML = '<option value="">-- പാഠം തിരഞ്ഞെടുക്കുക --</option>';
-            
-            readingLessons.forEach((l, idx) => {
-                if(!l.hidden) {
-                    let opt = document.createElement('option');
-                    opt.value = idx; 
-                    opt.innerText = l.title || l.name || (`പാഠം ${idx + 1}`);
-                    lSelect.appendChild(opt);
-                }
-            });
-        }
-    } catch(e) { 
-        console.error("റീഡിങ് പാഠങ്ങൾ ലഭ്യമല്ല:", e);
-        // ഫയൽ കിട്ടിയില്ലെങ്കിലും കോഡ് ബ്രേക്ക് ആവാതിരിക്കാൻ ടെസ്റ്റ് ഡാറ്റ നൽകാം
-    }
-}
-
 function onMadrasaChange() {
     let m = document.getElementById('madrasaSelect').value;
     let sSelect = document.getElementById('studentSelect');
@@ -196,67 +159,18 @@ function onMadrasaChange() {
     }
 }
 
-function onLessonChange() {
-    let idx = document.getElementById('lessonSelect').value;
-    if(idx !== "" && readingLessons[idx]) {
-        currentTargetText = readingLessons[idx].text || readingLessons[idx].content || "";
-    } else {
-        currentTargetText = "";
-    }
-}
-
-// 🎯 ശതമാനവും പോയിന്റും കണക്കാക്കുന്ന അൽഗോരിതം
-function calculateResult() {
+// സമർപ്പണം പരിശോധിക്കൽ (പാഠം ഇല്ലാത്തതിനാൽ പേസ്റ്റ് ചെയ്ത ടെക്സ്റ്റ് ഉണ്ടോയെന്ന് നോക്കുന്നു)
+function checkSubmission() {
     let student = document.getElementById('studentSelect').value;
     let studentClass = document.getElementById('classSelect').value;
-    let lessonIdx = document.getElementById('lessonSelect').value;
     let pastedText = document.getElementById('pastedTextDisplay').value;
 
     if(!student) return alert("ദയവായി കുട്ടിയുടെ പേര് സെലക്ട് ചെയ്യുക!");
     if(!studentClass) return alert("ദയവായി ക്ലാസ് സെലക്ട് ചെയ്യുക!");
-    if(lessonIdx === "") return alert("ദയവായി വായിക്കേണ്ട പാഠം സെലക്ട് ചെയ്യുക!");
     if(!pastedText.trim()) return alert("ദയവായി വാട്സ്ആപ്പിൽ ലഭിച്ച ടെക്സ്റ്റ് ബോക്സിൽ പേസ്റ്റ് ചെയ്യുക!");
-    if(!currentTargetText) return alert("തിരഞ്ഞെടുത്ത പാഠത്തിന്റെ മാതൃകാ ടെക്സ്റ്റ് ലഭ്യമല്ല!");
-
-    let targetWords = cleanText(currentTargetText).split(/\s+/);
-    let spokenWords = cleanText(pastedText).split(/\s+/);
-
-    let matchedCount = 0;
-    targetWords.forEach(word => {
-        if(spokenWords.includes(word)) {
-            matchedCount++;
-        }
-    });
-
-    let accuracy = Math.round((matchedCount / targetWords.length) * 100);
-    if(accuracy > 100) accuracy = 100;
-    
-    let points = accuracy;
 
     document.getElementById('resultCard').style.display = "block";
-    document.getElementById('accuracyVal').innerText = accuracy + "%";
-    document.getElementById('pointsVal').innerText = points;
-
-    let certBtn = document.getElementById('certBtn');
-    let ratingText = document.getElementById('ratingText');
-
-    if(accuracy >= 80) {
-        ratingText.innerText = "🌟 മികച്ച വായന! (Excellent)";
-        ratingText.style.color = "#27ae60";
-        certBtn.style.display = "inline-block";
-    } else if(accuracy >= 50) {
-        ratingText.innerText = "👍 നല്ല ശ്രമം! (Good)";
-        ratingText.style.color = "#e67e22";
-        certBtn.style.display = "inline-block";
-    } else {
-        ratingText.innerText = "⚠️ വീണ്ടും പരിശീലിക്കുക! (Needs Improvement)";
-        ratingText.style.color = "#e74c3c";
-        certBtn.style.display = "none";
-    }
-}
-
-function cleanText(str) {
-    return str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'']/g, "").trim().toLowerCase();
+    document.getElementById('certBtn').style.display = "inline-block";
 }
 
 // 📜 സർട്ടിഫിക്കറ്റ് തുറക്കൽ
@@ -264,18 +178,10 @@ function openCertificate() {
     let student = document.getElementById('studentSelect').value;
     let madrasa = document.getElementById('madrasaSelect').value;
     let studentClass = document.getElementById('classSelect').value;
-    let lessonIndex = document.getElementById('lessonSelect').value;
-    let lessonName = readingLessons[lessonIndex] ? (readingLessons[lessonIndex].title || readingLessons[lessonIndex].name) : "പാഠം";
-    let score = document.getElementById('accuracyVal').innerText;
 
     document.getElementById('certStudentName').innerText = student;
     document.getElementById('certMadrasaName').innerText = madrasa;
     document.getElementById('certClassName').innerText = studentClass;
-    document.getElementById('certLessonName').innerText = lessonName;
-    document.getElementById('certScore').innerText = score;
-    
-    let accNum = parseInt(score);
-    document.getElementById('certGrade').innerText = accNum >= 90 ? 'A+' : (accNum >= 80 ? 'A' : 'B');
 
     document.getElementById('certModal').style.display = "flex";
 }
@@ -289,17 +195,12 @@ function shareToWhatsApp() {
     let student = document.getElementById('certStudentName').innerText;
     let madrasa = document.getElementById('certMadrasaName').innerText;
     let studentClass = document.getElementById('certClassName').innerText;
-    let lesson = document.getElementById('certLessonName').innerText;
-    let score = document.getElementById('certScore').innerText;
-    let grade = document.getElementById('certGrade').innerText;
 
     let text = `📜 *വായനാ പ്രശംസാ പത്രം (Reading Certificate)*%0A%0A` +
                `👤 *വിദ്യാർത്ഥി:* ${student}%0A` +
                `🏫 *മദ്രസ:* ${madrasa}%0A` +
                `📚 *ക്ലാസ്:* ${studentClass}%0A` +
-               `📖 *പാഠം:* ${lesson}%0A` +
-               `🎯 *സ്കോർ:* ${score}%0A` +
-               `🏆 *ഗ്രേഡ്:* ${grade}%0A%0A` +
+               `📖 വായനാ പരിശോധന വിജയകരമായി പൂർത്തിയാക്കിയിരിക്കുന്നു.%0A%0A` +
                `_സൗണ്ട് ബുക്ക് - കുട്ടികളുടെ വായനാ വേദി വഴി തയ്യാറാക്കിയത്._`;
 
     window.open(`https://wa.me/?text=${text}`, '_blank');
