@@ -1,661 +1,654 @@
 {
-  "version": 1792435525457,
+  "version": 1792436412106,
   "words": [
     {
       "mal": "വിശുദ്ധ",
       "arbiText": "وِۺُدَّه",
-      "audio": "",
+      "audio": "data/audio_live_1792436388034_r1.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കഅ്ബ",
       "arbiText": "كَعْبَة",
-      "audio": "",
+      "audio": "data/audio_live_1792436380061_r2.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "നമ്മുടെ",
       "arbiText": "نَمُّڊ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436370905_r3.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഖിബ്‌ലയാണ്",
       "arbiText": "قِبْلَیَاڹۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436352325_r4.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പരിശുദ്ധ",
       "arbiText": "پَڔِۺُدَّه",
-      "audio": "",
+      "audio": "data/audio_live_1792436346056_r5.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "മക്കയിലാണ്",
       "arbiText": "مَكَّة یِلَاڹۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436339792_r6.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ലോകത്തിന്റെ",
       "arbiText": "لٗوكَتِّنْڔ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436333144_r7.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഭാഗത്തുനിന്നും",
       "arbiText": "بھَاگَتُّنِنُّمْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436326482_r8.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അവിടേക്ക്",
       "arbiText": "اَوِڊي٘كّۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436316066_r9.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ആളുകൾ",
       "arbiText": "آۻُكَۻَۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436308733_r10.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വരുന്നു",
       "arbiText": "وَڔُنُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436302097_r11.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പ്രശസ്തി",
       "arbiText": "پْرَۺَسْتِ",
-      "audio": "",
+      "audio": "data/audio_live_1792436296961_r12.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "യമനിലെ",
       "arbiText": "یَمَنِل٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436291069_r13.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അബ്രഹത്ത്",
       "arbiText": "اَبْرَهَةْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436285621_r14.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "രാജാവിനെ",
       "arbiText": "ڔَاجَاوِن٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436280333_r15.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അസ്വസ്ഥനാക്കി",
       "arbiText": "اَسْوَسْتَهنَاكِّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436274731_r16.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അയാൾ",
       "arbiText": "اَیَاۻَۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436268160_r17.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പൊളിക്കാൻ",
       "arbiText": "پٗۻِكَّانَْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436262713_r18.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തീരുമാനിച്ചു",
       "arbiText": "تِیڔُمَانِچُ",
-      "audio": "",
+      "audio": "data/audio_live_1792436256752_r19.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അതിനുവേണ്ടി",
       "arbiText": "اَتِنُوي٘ڹْڊِ",
-      "audio": "",
+      "audio": "data/audio_live_1792436250659_r20.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "സൈന്യവുമായി",
       "arbiText": "سَیْنۡیَوُمَایِ",
-      "audio": "",
+      "audio": "data/audio_live_1792436241845_r21.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "മക്കയിലേക്ക്",
       "arbiText": "مَكَّیِلي٘كّۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436234184_r22.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പുറപ്പെട്ടു",
       "arbiText": "پُرَپّ٘ڊُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436227860_r23.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഗജവീരന്മാരും",
       "arbiText": "گَجَوِیڔَنۡمَاڔُمْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436222334_r24.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ധാരാളം",
       "arbiText": "دَھاڔَاۻَمٛ",
-      "audio": "",
+      "audio": "data/audio_live_1792436216208_r25.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ആയുധങ്ങളുമുള്ള",
       "arbiText": "آیُدَھۼَّۻُمُۻَّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436210350_r26.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അവർ",
       "arbiText": "اَوَرٛ",
-      "audio": "",
+      "audio": "data/audio_live_1792436203278_r27.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "മക്കയുടെ",
       "arbiText": "مَكَّیُڊ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436198557_r28.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "സമീപമെത്തി",
       "arbiText": "سَمِیپَم٘تِّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436191480_r29.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "മക്കക്കാരെ",
       "arbiText": "مَكَّكَّاڔ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436184365_r30.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഭയപ്പെടുത്താൻ",
       "arbiText": "بَھیَپّ٘ڊُتَّانْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436177610_r31.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അവിടെ",
       "arbiText": "اَوِڊ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436169142_r32.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "മേഞ്ഞു",
       "arbiText": "مي٘ڿُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436161135_r33.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "നടന്നിരുന്ന",
       "arbiText": "نَڊَنِّڔُنَّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436152305_r34.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഒരു",
       "arbiText": "اٗڔُ",
-      "audio": "",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "ഒട്ടകം",
-      "arbiText": "اٗڊَّكَمٛ",
-      "audio": "",
+      "audio": "data/audio_live_1792436144826_r35.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഒട്ടകങ്ങളെ",
       "arbiText": "اٗڊَّكَۼَّۻ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436131802_r37.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പിടിച്ചു",
       "arbiText": "پِڊِچُ",
-      "audio": "",
+      "audio": "data/audio_live_1792436115408_r38.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കൊണ്ടുപോയി",
       "arbiText": "كٗڹْڊُپٗویِ",
-      "audio": "",
+      "audio": "data/audio_live_1792436109517_r39.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഒട്ടകങ്ങളും",
       "arbiText": "اٗڊَّكَۼَّۻُمْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436103104_r40.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അക്കൂട്ടത്തിൽ",
       "arbiText": "اَكُّوڊَّتِّلْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436094902_r41.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഉണ്ടായിരുന്നു",
       "arbiText": "اُڹْڊَایِڔُنُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436086190_r42.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വിവരമറിഞ്ഞ",
       "arbiText": "وِوَڔَمَرِڿَّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436077537_r43.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കാണാൻ",
       "arbiText": "كَاڹَانْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436069669_r44.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ചെന്നു",
       "arbiText": "چ٘نُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792436063026_r45.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "എൻറെ",
       "arbiText": "ا٘نْر٘",
-      "audio": "",
+      "audio": "data/audio_live_1792436058100_r46.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തിരിച്ചു",
       "arbiText": "تِڔِچُ",
-      "audio": "",
+      "audio": "data/audio_live_1792436052898_r47.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തരണം",
       "arbiText": "تَڔَڹَمٛ",
-      "audio": "",
+      "audio": "data/audio_live_1792436046009_r48.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഒട്ടകങ്ങളാണോ",
       "arbiText": "اٗڊَّكَۼَّۻَاڹٗو",
-      "audio": "",
+      "audio": "data/audio_live_1792436039841_r49.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "നിങ്ങൾക്ക്",
       "arbiText": "نِۼَّۻۡكّۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436033513_r50.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വലുത്",
       "arbiText": "وَلُتۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436027132_r51.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ഞാൻ",
       "arbiText": "ڿَانْ",
-      "audio": "",
+      "audio": "data/audio_live_1792436017866_r52.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വന്നതാണ്",
       "arbiText": "وَنَّتَاڹۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436010384_r53.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "എന്റേതാണ്",
       "arbiText": "ا٘نْڔ٘يتَاڹۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792436001925_r54.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അതെനിക്ക്",
       "arbiText": "اَت٘نِكّۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435995768_r55.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തരിക",
       "arbiText": "تَڔِكَ",
-      "audio": "",
+      "audio": "data/audio_live_1792435988376_r56.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അല്ലാഹു",
       "arbiText": "اَللّٰهُ",
-      "audio": "",
+      "audio": "data/audio_live_1792435980828_r57.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അത്",
       "arbiText": "اَتۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435973300_r58.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അവൻ",
       "arbiText": "اَوَنْ",
-      "audio": "",
+      "audio": "data/audio_live_1792435963004_r59.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "സംരക്ഷിച്ചുകൊള്ളും",
       "arbiText": "سَمٛڔَكْشِچُكٗۻُّمْ",
-      "audio": "",
+      "audio": "data/audio_live_1792435954126_r60.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തിരിച്ചുകൊടുത്തു",
       "arbiText": "تِڔِچُكٗڊُتُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435944506_r61.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ജനങ്ങളോട്",
       "arbiText": "جَنَۼَّۻٗوڊۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435936978_r62.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പരിസരത്തുനിന്ന്",
       "arbiText": "پَڔِسَڔَتُّنِنّۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435930446_r63.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "മാറി",
       "arbiText": "مَارِ",
-      "audio": "",
+      "audio": "data/audio_live_1792435922844_r64.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "താമസിക്കാൻ",
       "arbiText": "تَامَسِكَّانْ",
-      "audio": "",
+      "audio": "data/audio_live_1792435915868_r65.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ആവശ്യപ്പെട്ടു",
       "arbiText": "آوَۺۡیَپّ٘ڊُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435907773_r66.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "സമീപത്ത്",
       "arbiText": "سَمِیپَتّۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435899313_r67.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വെച്ച്",
       "arbiText": "و٘چّۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435890381_r68.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അദ്ദേഹം",
       "arbiText": "اَدّ٘يهمٛ",
-      "audio": "",
+      "audio": "data/audio_live_1792435882418_r69.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പ്രാർത്ഥിച്ചു",
       "arbiText": "پْرَارٛتِھچُ",
-      "audio": "",
+      "audio": "data/audio_live_1792435873246_r70.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ചുറ്റും",
       "arbiText": "چُڔُّمْ",
-      "audio": "",
+      "audio": "data/audio_live_1792435857353_r71.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കൂടിയവർ",
       "arbiText": "كُوڊِیَوَرٛ",
-      "audio": "",
+      "audio": "data/audio_live_1792435848469_r72.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ആമീൻ",
       "arbiText": "آمِینْ",
-      "audio": "",
+      "audio": "data/audio_live_1792435835099_r73.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പറഞ്ഞു",
       "arbiText": "پَرَڿُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435826062_r74.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "എല്ലാവരും",
       "arbiText": "ا٘لَّاوَڔُمْ",
-      "audio": "",
+      "audio": "data/audio_live_1792435817710_r75.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "സ്ഥലം",
       "arbiText": "سْتَلمٛ",
-      "audio": "",
+      "audio": "data/audio_live_1792435811137_r76.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വിട്ടു",
       "arbiText": "وِڊُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435802759_r77.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കൂട്ടം",
       "arbiText": "كُوڊَّمٛ",
-      "audio": "",
+      "audio": "data/audio_live_1792435795453_r78.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കുഞ്ഞു",
       "arbiText": "كُڿُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435785458_r79.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "പക്ഷികളെ",
       "arbiText": "پَكْشِكَۻ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792435778897_r80.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അയച്ചു",
       "arbiText": "اَیَچُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435772004_r81.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ചുട്ടുപഴുത്ത",
       "arbiText": "چُڊُّپَژُتَّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435765630_r82.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "കല്ലുകളുമായി",
       "arbiText": "كَلُّكَۻُمَایِ",
-      "audio": "",
+      "audio": "data/audio_live_1792435757078_r83.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അവയെത്തി",
       "arbiText": "اَوَی٘تِّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435750483_r84.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തീക്കല്ലുകൾ",
       "arbiText": "تِیكَّلُّكَۻَۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435740042_r85.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "നേരെ",
       "arbiText": "ن٘يڔ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792435732258_r86.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വർഷിച്ചു",
       "arbiText": "وَرٛشِچُّ",
-      "audio": "",
+      "audio": "data/audio_live_1792435723334_r87.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "അവരുടെ",
       "arbiText": "اَوَڔُڊ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792435714137_r88.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ശരീരങ്ങൾ",
       "arbiText": "ۺَڔِیڔَۼَّۻۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435704320_r89.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "ചതഞ്ഞരഞ്ഞതുപോലെയായി",
       "arbiText": "چَتَڿَّڔَڿَّتُپٗول٘یَایِ",
-      "audio": "",
+      "audio": "data/audio_live_1792435695537_r90.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "തകർക്കാൻ",
       "arbiText": "تَكَرٛكَّانْ",
-      "audio": "",
+      "audio": "data/audio_live_1792435674133_r91.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "വന്നവരെ",
       "arbiText": "وَنَّوَڔ٘",
-      "audio": "",
+      "audio": "data/audio_live_1792435665823_r92.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "നശിപ്പിച്ചു",
       "arbiText": "نَۺِپِّچُ",
-      "audio": "",
+      "audio": "data/audio_live_1792435656962_r93.mp3",
       "writingPaths": null,
       "hidden": false
     },
     {
       "mal": "സംരക്ഷകനാണ്",
       "arbiText": "سَمٛڔَكْشَكَنَاڹۡ",
-      "audio": "",
+      "audio": "data/audio_live_1792435640381_r94.mp3",
       "writingPaths": null,
       "hidden": false
     }
