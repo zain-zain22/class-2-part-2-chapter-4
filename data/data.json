@@ -1,5 +1,5 @@
 {
-  "version": 1792436412106,
+  "version": 1792460008506,
   "words": [
     {
       "mal": "വിശുദ്ധ",
@@ -33,13 +33,6 @@
       "mal": "പരിശുദ്ധ",
       "arbiText": "پَڔِۺُدَّه",
       "audio": "data/audio_live_1792436346056_r5.mp3",
-      "writingPaths": null,
-      "hidden": false
-    },
-    {
-      "mal": "മക്കയിലാണ്",
-      "arbiText": "مَكَّة یِلَاڹۡ",
-      "audio": "data/audio_live_1792436339792_r6.mp3",
       "writingPaths": null,
       "hidden": false
     },
